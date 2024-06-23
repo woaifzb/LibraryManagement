@@ -80,7 +80,7 @@ public class BookService {
                 task.setTitle(updatedBook.getTitle());
             }
             if (updatedBook.getBorrowed() != null) {
-                if(updatedBook.getBorrowed()){
+                if(updatedBook.getBorrowed()){//借书的时候更新借书时间
                     task.setborrowDate(LocalDate.now());
                 }
                 task.setBorrowed(updatedBook.getBorrowed());
